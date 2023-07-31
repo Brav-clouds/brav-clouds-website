@@ -1,0 +1,206 @@
+<html>
+<head>
+    <title>BRADOX</title>
+    <div class="container">
+        <nav class="navigator">
+        <div class="navbar">Home
+            <div onclick="alert('home')"><button class="tooltip">Home</button></div>
+        </div>
+        <div class="navbar">About
+            <div><button class="tooltip">About</button></div> 
+        </div>
+        <div class="navbar">Contact
+            <div><button class="tooltip">Contact</button></div></div>
+        <div class="navbar">Address
+            <div ><button class="tooltip">Address</button></div>
+    </nav>
+</div>
+<link rel="javascript/file" href="react.js">
+</head>
+ <style>
+        .navigator{
+            background-color:rgb(128, 106, 106);
+            padding:10px 10px 10px 5px;
+        }
+        .tooltip{
+            opacity:0;
+        }
+        .tooltip:hover{
+            opacity:1;
+            color: rgb(221, 12, 12);
+            cursor:pointer;
+        
+        }
+        
+       .navbar{
+        display:inline-block;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+
+       } 
+       .navbar:hover{
+        background-color:grey;
+        text-decoration:underline;
+       }
+        .container{
+            position:absolute;    
+            top:50%;
+            left:50px;
+            transform: translate(-50%, -50%) no-repeat;
+            width:80%;
+            height:550px;
+            background-size:cover;
+            background-position:top;
+            border-style:solid;
+            border-width:20px;
+            margin-top:40px;
+            background-color: rgb(158, 192, 147);
+            border-top-color:darkred;
+            border-left-color:goldenrod;
+            border-right-color:goldenrod;
+            z-index:0;
+            margin-top:10px;
+            
+        }
+             
+             @media (max-width:1000px) and (min-width:600px){
+                .direction{
+                    grid-template-columns:1fr;
+                }
+             }
+        .direction{
+            display:grid;
+            grid-template-columns:1fr;
+        }
+        .header{
+             display:flex;
+             flex-direction:column;
+            align-items: center;
+            justify-content:space-between;
+            border-top-width:20px;
+            border-top-color:rgb(37, 13, 80);
+            border-top-style:solid;
+            border-bottom-width:20px;
+            border-bottom-color:rgb(168, 27, 27);
+            border-bottom-style:solid;
+            border-left-width:20px;
+            border-left-color:rgb(231, 221, 221);
+            border-left-style:solid;
+            border-right-width:20px;
+            border-right-color:rgb(231, 221, 221);
+            border-right-style:solid;
+            background-color:lightgreen;
+            z-index:1000;
+        } 
+        .sec-1{
+        padding-bottom:10px;
+        padding-top:10px;;
+     }
+        .sec-2{
+            padding-bottom:10px;
+        }
+        .sec-4{
+            padding-top:10px;
+        }
+        .input-submit{
+            background-color:lightblue;
+            cursor:pointer;
+            border-radius:5px;
+            color:white;
+            font-weight:bolder;
+            border-width:10px;
+            margin-top:10px;
+            margin-bottom:10px;
+             border-top-color:chartreuse;
+            border-left-color: crimson;
+            border-bottom-color:darkblue;
+            border-right-color:darkgreen;
+            border-style:solid;
+            border-radius:5px;
+            border-width:10px;
+           
+        }
+      
+        .body{
+            display:flex;
+            justify-self:center;
+            min-height:100%;
+            background: url("jss/header/images/Screenshot (7).jpg");
+            background-size:cover;
+            background-position:center;
+            position:fixed;
+        }
+        .sec-4{
+            margin-left:-27px;
+        }
+        .direction{
+            background-color:mediumvioletred;
+        }
+        .bradox,
+        .motion{
+            font-weight:bolder;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            font-size:20px;
+            color:rgb(120, 233, 8);
+            z-index:10000;
+        }
+        .bradox{
+            background-color:chocolate;
+        }
+        .motion{
+            background-color:chocolate;
+            margin-top:0;
+        }
+        .input-submit:hover{
+          color:red;
+          
+        }
+        .span{
+            color:rgb(69, 11, 134);
+            font-weight:bolder;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:large;
+            
+
+        }
+        .phone-space{
+            padding-right:13px;
+            background-color:rgb(203, 218, 218);
+        }
+        .email-space{
+            padding-right:14PX;
+            background-color:rgb(203, 218, 218);
+        }
+        .text-space, .pass-space, .phone-space, .email-space{
+            background-color:rgb(203, 218, 218);
+            border-style:solid;
+            border-color: rgb(71, 20, 112);
+            border-width:3px;
+            border-radius:5px;
+            font-size:20px;
+        }
+        </style>
+<body>
+    <body bgcolor="indigo">
+    <div class="direction">
+        <div><marquee direction="right"><p class="bradox">BRADOX COMPANY WEBSITE BRADOX COMPANY WEBSITE <SPAN><marquee behavior="scroll" direction="left">BRADOX COMPANY WEBSITE BRADOX COMPANY WEBSITE</marquee></SPAN></p></marquee></div>
+        <div><marquee direction="left"><p class="motion">EVERYTHING IN MOTION <SPAN><marquee direction="right">EVERYTHING IN MOTION</marquee></SPAN></p></marquee></div>
+
+    </div>
+    <div class="header">
+        <div class="sec-1"><span class="span">NAMES:</span><input class="text-space" type="text"></div> 
+        <div class="sec-2"><span class="span">EMAIL:</span><input class="email-space" type="EMAIL"> </div>
+        <div class="sec-3"><span class="span">PHONE:</span><input class="phone-space" type="tel"></div>
+        <div class="sec-4"><span class="span">PASSWORD:</span><input class="pass-space" type="password"></div>
+        <div class="sec-5"><a href="preconnect" rel="file:///C:/Users/Andrew%20Kahi/Desktop/jpeg.html"><input class="input-submit" onclick="alert('welcome to my world')" type="submit"></a></div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
+
